@@ -10,7 +10,7 @@
 
 <div class="card blogpost-item mb-5">
   <div class="row no-gutters">
-    <div class="col-md-3">
+    <div class="col-md-4">
       <a href="<?php the_permalink() ?>">
         <?php if ( has_post_thumbnail() ) { ?>
           <img class="card-img cover-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="">
@@ -29,10 +29,10 @@
           echo "<a href='$cat_link'>$cat_name</a>";
         }
         ?></h6>
-        <h6 class="card-category"><strong><?php the_time('M j, Y') ?></strong></h6>
+        <h6 class="card-category text-muted"><strong><?php the_time('M j, Y') ?></strong></h6>
         <h4 class="card-title"><a href="<?php the_permalink() ?>" class="text-dark"><strong><?php the_title(); ?></strong></a></h4>
-        <div class="card-text pl-4">
-          <?php echo excerpt(12); ?>
+        <div class="card-text text-muted pl-4">
+          <?php echo excerpt(30); ?>
           <!-- <a href="<?php the_permalink() ?>"><strong>Read More</strong></a> -->
         </div>
         <a class="btn btn-primary btn-sm mt-3" href="<?php the_permalink() ?>">Read More</a>

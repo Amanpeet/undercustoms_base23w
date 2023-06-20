@@ -114,6 +114,20 @@ a:focus {
   outline: thin dotted;
 }
 
+.link-dark {
+  color: #000 !important;
+}
+
+.link-light {
+  color: #fff !important;
+}
+
+.link-light:hover,
+.link-light:focus,
+.link-dark:hover,
+.link-dark:focus {
+  color: #c05c18;
+}
 
 /* -----------------------
   Common classes
@@ -869,7 +883,7 @@ object {
 	background: #171717;
 	/* background: linear-gradient(180deg, #444444 0%, #000 100%); */
 	/* border-top: 1px solid rgba(0, 0, 0, 0.2); */
-	padding: 40px 0px 0;
+	padding: 20px 0 0;
 }
 
 .site-footer a {
@@ -1161,7 +1175,7 @@ object {
   display: block;
   padding: 60px 0;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .parallax-box {
@@ -1958,8 +1972,12 @@ object {
 
 #maps iframe {
 	width: 100%;
+	display: block;
+	border: 1px solid #ddd !important;
+	background: #fff;
+	padding: 6px;
+	border-radius: 4px;
 }
-
 /* Contact form v5.7 fix */
 .wpcf7-form .row > p,
 .wpcf7-form br {
