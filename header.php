@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <div class="header-top">
+      <div class="header-main">
         <div class="container py-2">
           <div class="row no-gutters">
 

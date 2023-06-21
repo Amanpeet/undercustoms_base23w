@@ -709,7 +709,7 @@ object {
 /* HEADER */
 
 .site-header {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	color: #fff;
 	background: #fff;
@@ -745,17 +745,30 @@ object {
 	padding: 10px 0;
 }
 
-.header-top .logo img {
+.site-header .header-main {
+	padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.site-header .header-main .logo img {
 	max-height: 60px;
 	margin: 0;
 	padding: 0;
 }
 
-.header-top .search-form {
+.site-header .header-main.minified {
+	padding: 0 0;
+}
+
+.site-header .header-main.minified .logo img {
+	max-height: 70px;
+}
+
+.site-header .header-main .search-form {
   position: relative;
 }
 
-.header-top .search-form input[type="search"] {
+.site-header .header-main .search-form input[type="search"] {
   width: 100%;
   padding: 6px 10px;
   color: #222;
@@ -766,7 +779,7 @@ object {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-.header-top .search-form button[type="submit"] {
+.site-header .header-main .search-form button[type="submit"] {
   position: absolute;
   right: 5px;
   top: 10%;
@@ -836,12 +849,12 @@ object {
   background: #eee;
 }
 
-.header-top .contact-info {
+.site-header .header-main .contact-info {
   text-align: right;
   margin-top: 15px;
 }
 
-.header-top .search-btn .btn {
+.site-header .header-main .search-btn .btn {
 	font-size: 18px;
 	color: #111;
 	background: transparent;
@@ -852,7 +865,7 @@ object {
   text-transform: none;
 }
 
-.header-top .contact-info h6 {
+.site-header .header-main .contact-info h6 {
   font-weight: 500;
   font-size: 16px;
   margin-right: 10px;
@@ -2011,11 +2024,11 @@ object {
     padding: 20px;
   }
 
-  .header-top .search-btn .btn {
+  .site-header .header-main .search-btn .btn {
     width: 100%;
   }
 
-  .header-top .contact-info {
+  .site-header .header-main .contact-info {
     padding-top: 0px;
     text-align: right;
   }
@@ -2074,7 +2087,7 @@ object {
     display: none;
   }
 
-  .header-top .logo img {
+  .site-header .header-main .logo img {
     max-height: 50px;
   }
 

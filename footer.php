@@ -167,6 +167,17 @@ jQuery(document).ready(function( $ ) { //noconflicts
   //animate on scroll
   AOS.init();
 
+    // sticky header
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 1 ){
+      $(".header-topbar").slideUp(300);
+      $(".header-main").addClass('minified');
+    } else {
+      $(".header-topbar").slideDown(300);
+      $(".header-main").removeClass('minified');
+    }
+  });
+
   //show popup
   <?php if(is_front_page()){ ?>
     setTimeout(function(){
